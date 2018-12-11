@@ -1,0 +1,10 @@
+{
+  "name": "react-native-video-thumbnail",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["react-native", "video", "thumbnail"],
+  "author": "",
+  "license": ""
+}
