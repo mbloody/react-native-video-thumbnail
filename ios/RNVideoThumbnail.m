@@ -29,7 +29,6 @@ RCT_EXPORT_METHOD(get:(NSString *)filepath resolve:(RCTPromiseResolveBlock)resol
         if (thumbnail) {
             [result setObject:@(thumbnail.size.width) forKey:@"width"];
             [result setObject:@(thumbnail.size.height) forKey:@"height"];
-            //[result setObject:@((CMTimeGetSeconds(asset.duration) * 1000)) forKey:@"duration"];
 
             NSString *header = @"data:image/png;base64,";
             NSString *imgdata = [UIImagePNGRepresentation(thumbnail) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
