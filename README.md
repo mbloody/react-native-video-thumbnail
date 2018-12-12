@@ -34,11 +34,17 @@
       compile project(':react-native-video-thumbnail')
   	```
 
+
 ## Usage
 ```javascript
-import RNVideoThumbnail from 'react-native-video-thumbnail';
+import VideoThumbnail from 'react-native-video-thumbnail';
 
-// TODO: What to do with the module?
-RNVideoThumbnail;
+VideoThumbnail.get(this.path)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 ```
-  
