@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ npm install react-native-video-thumbnail --save`
+`$ npm install git://github.com/mbloody/react-native-video-thumbnail.git --save`
 
 ### Mostly automatic installation
 
