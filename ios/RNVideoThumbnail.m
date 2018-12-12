@@ -31,7 +31,10 @@ RCT_EXPORT_METHOD(get:(NSString *)filepath resolve:(RCTPromiseResolveBlock)resol
             [result setObject:@(thumbnail.size.height) forKey:@"height"];
             //[result setObject:@((CMTimeGetSeconds(asset.duration) * 1000)) forKey:@"duration"];
 
-            NSString *data = [UIImagePNGRepresentation(thumbnail) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+            NSString *header = @"data:image/png;base64,";
+            NSString *imgdata = [UIImagePNGRepresentation(thumbnail) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+            NSString *data = [header stringByAppendingString:imgdata];
+
             [result setObject:data forKey:@"data"];
         }
         CGImageRelease(imgRef);
