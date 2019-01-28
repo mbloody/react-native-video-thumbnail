@@ -11,10 +11,12 @@ import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.module.annotations.ReactModule;
 
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 
+@ReactModule(name = "RNVideoThumbnailModule")
 public class RNVideoThumbnailModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
