@@ -16,10 +16,8 @@ import com.facebook.react.module.annotations.ReactModule;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 
-@ReactModule(name = RNVideoThumbnailModule.NAME)
+@ReactModule(name = "RNVideoThumbnailModule")
 public class RNVideoThumbnailModule extends ReactContextBaseJavaModule {
-
-  public static final String NAME = "RNVideoThumbnailModule";
 
   private final ReactApplicationContext reactContext;
 
@@ -30,7 +28,7 @@ public class RNVideoThumbnailModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return NAME;
+    return "RNVideoThumbnail";
   }
 
   @ReactMethod
